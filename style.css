@@ -1,0 +1,92 @@
+/* body >> tag name in html*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;padding: 0;/*ازالة الهوامش الافتراضية للمتصفح */
+    height: 100vh;/*تحديد ارتفاع الصفحة بالكامل */
+    display: flex;
+    flex-direction: column;/*تحديد اتجاه العناصر داخل الصفحة (ترتيب العناصر فوق بعضها عموديا  اعلي وسط اسفل) */
+    justify-content: space-between;
+}
+/*if it's not a tag name >> .itsname >> which is the class name ابحث عن عنصر يحمل كلاس بهذا الاسم*/
+.nav-links{
+    display: flex;
+    justify-content: flex-end; /*محاذاة العناصر الي اليمين */
+    padding: 20px; /*مسافة فراغ حول الروابط*/
+    gap: 10px; /*مسافة صغيرة بين الرابطين حتي لا يلتصقا ببعضهما*/
+}
+.nav-links a{
+    text-decoration: none; /*ازالة الخط السفلي من الروابط */
+    color: black; /*لون الخط */
+    font-size: 14px; /*حجم الخط */
+}   
+.nav-links a:hover{
+    text-decoration: underline; /*اضافة خط سفلي عند مرور الماوس علي الرابط */
+}
+.main-container{
+    display: flex;
+    flex-direction: column; /*ترتيب العناصر فوق بعضها عموديا */
+    align-items: center; /* محاذاة العناصر في منتصف الصفحة افقيا*/
+    margin-bottom: auto;
+    margin-top: 25px; /*مسافة فراغ من اعلي الصفحة */
+}
+.logo{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    letter-spacing: 2px; /* تقارب الحروف من بعضها البعض */
+}
+/*تلوين كل حرف بألوان جوجل الشهيره*/
+.logo span:nth-child(1){color: #4285F4;}
+.logo span:nth-child(2){color: #EA4335;}
+.logo span:nth-child(3){color: #FBBC05;}
+.logo span:nth-child(4){color: #4285F4;}
+.logo span:nth-child(5){color: #34A853;}
+.logo span:nth-child(6){color: #EA4335;}
+
+.images-text {
+    font-size: 35px;         
+    color: rgba(0, 0, 0, 0.432);       
+    font-family:'Courier New', Courier, monospace; 
+    font-weight: bold;     
+  
+}
+
+.search-bar-container{
+    width: 600px;/*تحديد عرض شريط البحث */
+    max-width: 90%; /*  تحديد اقصي عرض لشريط البحث >> الرقم دا بالتحديد علشان يكون متجاوب مع الشاشات الصغيرة*/
+    margin-bottom: 25px; /*مسافة فراغ من اسفل شريط البحث */
+} 
+.search-input{
+    width: 100%; /*عرض شريط البحث بالكامل */
+    height: 44px; /*ارتفاع شريط البحث */
+    padding: 0 20px; /*مسافة فراغ من اليمين واليسار داخل شريط البحث */
+    border: 1px solid #dfe1e5; /*لون وسمك حدود شريط البحث */
+    border-radius: 24px; /*تدوير حواف شريط البحث */
+    font-size: 16px; /*حجم الخط داخل شريط البحث */
+    outline: none; /*ازالة اطار التركيز الافتراضي عند الضغط علي شريط البحث */
+    box-sizing: border-box; /*تحديد طريقة حساب عرض وارتفاع شريط البحث */
+}
+.search-input:focus,.search-input:hover{
+    box-shadow: 0 1px 6px rgba(32,33,36,.28); /*اضافة ظل حول شريط البحث عند التركيز عليه */
+    border-color: rgba(223,225,229,0); /*تغيير لون حدود شريط البحث عند التركيز عليه */
+}
+.buttons-container{
+    display: flex;
+    gap: 12px; /*مسافة صغيرة بين الزرين حتي لا يلتصقا ببعضهما*/
+}
+.search-btn{
+    background-color: #f8f9fa; /*لون خلفية الزر */
+    border: 1px solid #f8f9fa; /*لون وسمك حدود الزر */
+    border-radius: 4px; /*تدوير حواف الزر*/
+    color: #3c4043; /*لون الخط داخل الزر */
+    font-size: 14px; /*حجم الخط داخل الزر */
+    padding: 0 16px; 
+    height: 36px; /*ارتفاع الزر */
+    cursor: pointer; /*تغيير شكل المؤشر عند المرور علي الزر */
+}
+.search-btn:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1); /*اضافة ظل حول الزر عند المرور عليه */
+    border: 1px solid #dadce0; /*تغيير لون وسمك حدود الزر عند المرور عليه */
+    color: #202124; /*تغيير لون حدود الزر عند المرور عليه */
+}
+

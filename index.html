@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+      <meta charset="UTF-8"> <!--دعم جميع لغات العالم وبدونه اي نص غير الحرو الانحليزية يظهر كعلامات استفهام -->  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--دعم جميع الاجهزة وبدونه يظهر الموقع بشكل غير منسق على الاجهزة الصغيرة -->
+      <title> Google </title>
+      <link rel="stylesheet" href="style.css"> <!--ربط ملف التنسيق الخارجي -->  
+    </head>
+    <body>
+
+    <!-- 1. روابط التنقل في أعلى الصفحة -->
+    <div class="nav-links">
+        <a href="image.html">Google Images</a>
+        <a href="advanced.html">Advanced Search</a>
+    </div>
+
+    <!-- 2. حاوية محتوى الصفحة الرئيسية (الشعار والبحث) -->
+    <div class="main-container">
+        <!-- شعار جوجل الملون -->
+        <h1 class="logo"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
+
+        <!-- نموذج البحث -->
+        <form action="https://www.google.com/search" method="GET">
+            <div class="search-bar-container">
+                <input type="text" name="q" class="search-input" autofocus>  
+            </div>
+
+            <div class="buttons-container">
+                <input type="submit" value="Google Search" class="search-btn">
+                <input type="submit" name="btnI" value="I'm Feeling Lucky" class="search-btn">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html> 

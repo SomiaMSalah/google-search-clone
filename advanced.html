@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+    <!-- التنسيقات مباشرة هنا لضمان قراءتها فوراً بدون أخطاء -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .advanced-container {
+            width: 750px;
+            max-width: 90%;
+            margin: 30px auto ;
+            padding: 20px;
+        }
+
+        .advanced-title {
+            color: #d93025;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .advanced-divider {
+            border: 0;
+            height: 1px;
+            background: #ebebeb;
+            margin-bottom: 25px;
+        }
+
+        .adv-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .adv-label-group {
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .adv-label-group label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #202124;
+            margin-bottom: 3px;
+        }
+
+        .adv-label-group span {
+            font-size: 13px;
+            color: #5f6368;
+        }
+
+        .adv-input {
+            flex: 1;
+            height: 32px;
+            padding: 0 8px;
+            border: 1px solid #d9d9d9;
+            border-radius: 1px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .adv-input:focus {
+            border-color: #1a73e8;
+            box-shadow: 0 0 2px rgba(26, 115, 232, 0.4);
+        }
+
+        .adv-submit-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+            border-top: 1px solid #ebebeb;
+            padding-top: 20px;
+        }
+
+        .advanced-search-btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .advanced-search-btn:hover {
+            background-color: #1558b0;
+        }
+        .nav-links{
+    display: flex;
+    justify-content: flex-end; /*محاذاة العناصر الي اليمين */
+    padding: 20px; /*مسافة فراغ حول الروابط*/
+    gap: 10px; /*مسافة صغيرة بين الرابطين حتي لا يلتصقا ببعضهما*/
+}
+.nav-links a{
+    text-decoration: none; /*ازالة الخط السفلي من الروابط */
+    color: black; /*لون الخط */
+    font-size: 14px; /*حجم الخط */
+}   
+.nav-links a:hover{
+    text-decoration: underline; /*اضافة خط سفلي عند مرور الماوس علي الرابط */
+}
+    </style>
+</head>
+<body>
+
+    <!-- رابط العودة لصفحة البحث الرئيسية -->
+    <div class="nav-links">
+        <a href="index.html">Google Search</a>
+    </div>
+
+    <div class="advanced-container">
+        <h2 class="advanced-title">Advanced Search</h2>
+        <hr class="advanced-divider">
+
+        <form action="https://www.google.com/search" method="GET">
+            
+            <div class="adv-row">
+                <div class="adv-label-group">
+                    <label>Find pages with...</label>
+                    <span>All these words:</span>
+                </div>
+                <input type="text" name="as_q" class="adv-input">
+            </div>
+
+            <div class="adv-row">
+                <div class="adv-label-group">
+                    <span></span>
+                    <span>This exact word or phrase:</span>
+                </div>
+                <input type="text" name="as_epq" class="adv-input">
+            </div>
+
+            <div class="adv-row">
+                <div class="adv-label-group">
+                    <span></span>
+                    <span>Any of these words:</span>
+                </div>
+                <input type="text" name="as_ooq" class="adv-input">
+            </div>
+
+            <div class="adv-row">
+                <div class="adv-label-group">
+                    <span></span>
+                    <span>None of these words:</span>
+                </div>
+                <input type="text" name="as_eq" class="adv-input">
+            </div>
+
+            <div class="adv-submit-container">
+                <input type="submit" value="Advanced Search" class="advanced-search-btn">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
